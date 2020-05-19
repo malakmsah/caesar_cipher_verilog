@@ -36,7 +36,7 @@ module caeserEncoder(
             begin
             if(switch == 0)
                 begin
-                    case (char)
+                    case (char) // encode
                         8'b11111101: newChar = 8'b00000001; 
                         8'b11111110: newChar = 8'b00000010;
                         8'b11111111: newChar = 8'b00000011; 

@@ -67,7 +67,7 @@ caeserEncoder ced(
   // AHBLite VGA Controller  
 VGASYS vgasys1(
     .CLK(CLK100MHZ),
-    .RESET(RESET),
+    .RESET(BTNC),
     .LED(LED[15:8]),
     .vgaRed(vgaRed),
     .vgaGreen(vgaGreen),

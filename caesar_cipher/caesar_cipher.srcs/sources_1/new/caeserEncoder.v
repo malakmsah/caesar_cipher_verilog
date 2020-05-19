@@ -24,29 +24,38 @@
 module caeserEncoder(
     input wire [7:0] char,
     input wire switch,
-    output reg [7:0] newChar
+    input wire isCharInserted,
+    output reg [7:0] newChar,
+    output reg cready
     );
+    
     
     always @(*)
     begin
-        if(switch == 0)
+        if( isCharInserted == 1)
             begin
-                case (char)
-                    8'b11111101: newChar = 8'b00000001; 
-                    8'b11111110: newChar = 8'b00000010;
-                    8'b11111111: newChar = 8'b00000011; 
-                    default: newChar = char + 8'b00000011; 
-                endcase
-            end
+            if(switch == 0)
+                begin
+                    case (char)
+                        8'b11111101: newChar = 8'b00000001; 
+                        8'b11111110: newChar = 8'b00000010;
+                        8'b11111111: newChar = 8'b00000011; 
+                        default: newChar = char + 8'b00000011; 
+                    endcase
+                end
+            else
+                begin
+                    case (char)
+                        8'b00000001: newChar = 8'b11111101; 
+                        8'b00000010: newChar = 8'b11111110;
+                        8'b00000011: newChar = 8'b11111111; 
+                        default: newChar = char - 8'b00000011; 
+                    endcase
+                end
+            cready = 1;
+        end
         else
-            begin
-                case (char)
-                    8'b00000001: newChar = 8'b11111101; 
-                    8'b00000010: newChar = 8'b11111110;
-                    8'b00000011: newChar = 8'b11111111; 
-                    default: newChar = char - 8'b00000011; 
-                endcase
-            end
+            cready = 0;
     end
     
 endmodule

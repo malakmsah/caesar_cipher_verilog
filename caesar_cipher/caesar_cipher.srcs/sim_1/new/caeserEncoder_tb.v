@@ -23,15 +23,23 @@
 module caeserEncoder_tb();
     reg [7:0] char;
     wire [7:0] newChar;
-
+    reg switch;
+    reg isCharInserted;
+    wire cready;
+    
     caeserEncoder cet(
         .char(char),
-        .newChar(newChar)
+        .switch(switch),
+        .isCharInserted(isCharInserted),
+        .newChar(newChar),
+        .cready(cready)
     );
     
     
   initial
   begin
+    switch = 1;
+    isCharInserted = 1;
     char = 8'b00000001;
     #10
     
@@ -41,6 +49,7 @@ module caeserEncoder_tb();
     char = 8'b11111101;
     #10
     
+    isCharInserted = 0;
     char = 8'b11111110;
     #10
     

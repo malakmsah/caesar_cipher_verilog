@@ -24,7 +24,8 @@ module PS2Receiver(
     input clk,
     input kclk,
     input kdata,
-    output [31:0] keycodeout
+    output [31:0] keycodeout,
+    output isCharInserted
     );
     
     
@@ -36,7 +37,7 @@ module PS2Receiver(
     reg flag;
     
     initial begin
-        keycode[31:0]<=0'h00000000;
+        keycode[31:0] <= {32'b0};
         cnt<=4'b0000;
         flag<=1'b0;
     end
@@ -73,12 +74,13 @@ always @(posedge flag)begin
     if (dataprev!=datacur)begin
         keycode[31:24]<=keycode[23:16];
         keycode[23:16]<=keycode[15:8];
-        keycode[15:8]<=dataprev;
-        keycode[7:0]<=datacur;
+        keycode[15:8] <= dataprev;
+        keycode[7:0] <= datacur;
         dataprev<=datacur;
     end
 end
     
 assign keycodeout=keycode;
-    
+assign isCharInserted = (keycode[7:0] == {8'b0});    
+
 endmodule

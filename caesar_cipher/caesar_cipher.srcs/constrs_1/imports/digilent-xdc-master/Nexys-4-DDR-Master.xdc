@@ -81,7 +81,7 @@ set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { AN[7] 
 
 #set_property -dict { PACKAGE_PIN C12   IOSTANDARD LVCMOS33 } [get_ports { CPU_RESETN }]; #IO_L3P_T0_DQS_AD1P_15 Sch=cpu_resetn
 
-#set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { BTNC }]; #IO_L9P_T1_DQS_14 Sch=btnc
+set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { BTNC }]; #IO_L9P_T1_DQS_14 Sch=btnc
 #set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } [get_ports { BTNU }]; #IO_L4N_T0_D05_14 Sch=btnu
 #set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { BTNL }]; #IO_L12P_T1_MRCC_14 Sch=btnl
 #set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { BTNR }]; #IO_L10N_T1_D15_14 Sch=btnr
@@ -172,6 +172,52 @@ set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { AN[7] 
 #set_property -dict { PACKAGE_PIN B12   IOSTANDARD LVCMOS33 } [get_ports { VGA_VS }]; #IO_L3N_T0_DQS_AD1N_15 Sch=vga_vs
 
 
+#VGA Connector
+#Bank = 35, Pin name = IO_L8N_T1_AD14N_35,					Sch name = VGA_R0
+#set_property PACKAGE_PIN A3 [get_ports {vgaRed[0]}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports {vgaRed[0]}]
+#Bank = 35, Pin name = IO_L7N_T1_AD6N_35,					Sch name = VGA_R1
+set_property PACKAGE_PIN B4 [get_ports {vgaRed[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaRed[0]}]
+#Bank = 35, Pin name = IO_L1N_T0_AD4N_35,					Sch name = VGA_R2
+set_property PACKAGE_PIN C5 [get_ports {vgaRed[1]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaRed[1]}]
+#Bank = 35, Pin name = IO_L8P_T1_AD14P_35,					Sch name = VGA_R3
+set_property PACKAGE_PIN A4 [get_ports {vgaRed[2]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaRed[2]}]
+#Bank = 35, Pin name = IO_L2P_T0_AD12P_35,					Sch name = VGA_B0
+#set_property PACKAGE_PIN B7 [get_ports {vgaBlue[0]}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports {vgaBlue[0]}]
+##Bank = 35, Pin name = IO_L4N_T0_35,						Sch name = VGA_B1
+#set_property PACKAGE_PIN C7 [get_ports {vgaBlue[1]}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports {vgaBlue[1]}]
+#Bank = 35, Pin name = IO_L6N_T0_VREF_35,					Sch name = VGA_B2
+set_property PACKAGE_PIN D7 [get_ports {vgaBlue[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaBlue[0]}]
+#Bank = 35, Pin name = IO_L4P_T0_35,						Sch name = VGA_B3
+set_property PACKAGE_PIN D8 [get_ports {vgaBlue[1]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaBlue[1]}]
+##Bank = 35, Pin name = IO_L1P_T0_AD4P_35,					Sch name = VGA_G0
+#set_property PACKAGE_PIN C6 [get_ports {vgaGreen[0]}]				
+#	set_property IOSTANDARD LVCMOS33 [get_ports {vgaGreen[0]}]
+#Bank = 35, Pin name = IO_L3N_T0_DQS_AD5N_35,				Sch name = VGA_G1
+set_property PACKAGE_PIN A5 [get_ports {vgaGreen[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaGreen[0]}]
+#Bank = 35, Pin name = IO_L2N_T0_AD12N_35,					Sch name = VGA_G2
+set_property PACKAGE_PIN B6 [get_ports {vgaGreen[1]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaGreen[1]}]
+#Bank = 35, Pin name = IO_L3P_T0_DQS_AD5P_35,				Sch name = VGA_G3
+set_property PACKAGE_PIN A6 [get_ports {vgaGreen[2]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {vgaGreen[2]}]
+#Bank = 15, Pin name = IO_L4P_T0_15,						Sch name = VGA_HS
+set_property PACKAGE_PIN B11 [get_ports Hsync]						
+	set_property IOSTANDARD LVCMOS33 [get_ports Hsync]
+#Bank = 15, Pin name = IO_L3N_T0_DQS_AD1N_15,				Sch name = VGA_VS
+set_property PACKAGE_PIN B12 [get_ports Vsync]						
+	set_property IOSTANDARD LVCMOS33 [get_ports Vsync]
+set_property SLEW FAST [get_ports Hsync]
+set_property SLEW FAST [get_ports Vsync]
+
 ##Micro SD Connector
 
 #set_property -dict { PACKAGE_PIN E2    IOSTANDARD LVCMOS33 } [get_ports { SD_RESET }]; #IO_L14P_T2_SRCC_35 Sch=sd_reset
@@ -252,3 +298,18 @@ set_property -dict { PACKAGE_PIN B2    IOSTANDARD LVCMOS33 } [get_ports { PS2_DA
 #set_property -dict { PACKAGE_PIN L13   IOSTANDARD LVCMOS33 } [get_ports { QSPI_CSN }]; #IO_L6P_T0_FCS_B_14 Sch=qspi_csn
 
 
+## Debug
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports TCK]
+set_property IOSTANDARD LVCMOS33 [get_ports TDI]
+set_property IOSTANDARD LVCMOS33 [get_ports TDO]
+set_property IOSTANDARD LVCMOS33 [get_ports TMS]
+set_property SLEW FAST [get_ports TDO]
+set_property SLEW FAST [get_ports TMS]
+set_property PACKAGE_PIN H4 [get_ports TMS]
+set_property PACKAGE_PIN H1 [get_ports TDI]
+set_property PACKAGE_PIN G1 [get_ports TDO]
+set_property PACKAGE_PIN G3 [get_ports TCK]
+create_clock -period 20.000 -name dbg_tck_pin -waveform {0.000 10.000} -add [get_ports TCK]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets TCK]

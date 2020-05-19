@@ -1,7 +1,4 @@
-Running: xsim.dir/caeserEncoder_tb_behav/xsimk -simmode gui -wdb caeserEncoder_tb_behav.wdb -simrunnum 0 -socket 43749
+Running: xsim.dir/caeserEncoder_tb_behav/xsimk -simmode gui -wdb caeserEncoder_tb_behav.wdb -simrunnum 0 -socket 47673
 Design successfully loaded
 Design Loading Memory Usage: 43956 KB (Peak: 44076 KB)
 Design Loading CPU Usage: 10 ms
-Simulation completed
-Simulation Memory Usage: 125692 KB (Peak: 183224 KB)
-Simulation CPU Usage: 70 ms

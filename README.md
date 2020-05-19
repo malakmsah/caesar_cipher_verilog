@@ -16,7 +16,7 @@ held down for 0.5 second. The make code of the main part of a PS2 keyboard is sh
 below. It is normally 1 byte wide and represented by two hexadecimal numbers. For example,
 the make code of the A key is IC.
 
-![](fig1.png)
+![](figures/fig1.png)
 Figure 1: Keyboard scan codes set
 
 
@@ -29,7 +29,7 @@ by one byte of data, a parity bit, and finally a stop bit (logic high). The data
 Each bit should be read on the falling edge of the clock signal. Once complete, both the clock
 and data signals return to logic level high.
 
-![](fig2.png)
+![](figures/fig2.png)
 Figure 2: PS/2 Keyboard Transmission Timing Diagram
 The data byte represents part of a keyboard scan code: either a make code (key press) or a
 break code (key release). Three different sets of scan codes exist, however the vast majority of
@@ -48,22 +48,22 @@ The datacur signal remains high until another PS/2 (datacur will be dataprev) tr
 (when a low PS/2_CLK signal clears the idle counter).
 
 
+![](figures/fig3.png)
 ```
-![](fig3.png)
 Figure 3: PS/2 Keyboard Interface Logic Architecture
 ```
 **2. VGA**
 A Video Graphics Array (VGA) is a standard type of connection for video devices such as
 monitors and projectors. The VGA connector has 15 pins as shown in Figure 4, which is used to
 determine colors, position of writing and written data.
-![](fig4.png)
+![](figures/fig4.png)
 Figure 4: VGA connecter
 The Nexys4 DDR board uses 14 FPGA signals to create a VGA port with 4 bits-per-color and the
 two standard sync signals (HS – Horizontal Sync, and VS – Vertical Sync). A video controller
 circuit must be created in the FPGA to drive the sync and color signals with the correct timing in
 order to produce a working display system.
 
-![](fig5.png)
+![](figures/fig5.png)
 Figure 5: VGA display controller block diagram
 A VGA controller circuit, shown in Figure 5, decodes the output of a horizontal-sync counter
 driven by the pixel clock to generate HS signal timings. This counter can be used to locate any
@@ -94,11 +94,11 @@ E​n​(x) = x + n; // n = 3
 (Encryption Phase with shift n)
 E​n​(x) = x - n; // n = 3
 (Decryption Phase with shift n)
-![](fig66.png)
+![](figures/fig66.png)
 Figure 6: Caesar cipher
 **II. Top level diagram**
 The diagram below explains this process flow of this project:
-![](fig77.png)
+![](figures/fig77.png)
 
 Schematic design
-![](fig88.png)
+![](figures/fig88.png)

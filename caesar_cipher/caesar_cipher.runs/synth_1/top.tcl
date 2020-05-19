@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,10 +29,17 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo /home/malak/sites/addproject/caesar_cipher/caesar_cipher.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/keyboard/PS2Receiver.v
-  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/keyboard/Seg_7_Display.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/new/VGASYS.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/new/caeserEncoder.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/counter.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/keyboard/debouncer.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/font_rom.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/vga_image.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/vga_sync.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/keyboard/top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

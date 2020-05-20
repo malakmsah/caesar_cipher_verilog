@@ -28,7 +28,8 @@ module top(
 reg CLK50MHZ = 0;    
 wire [31:0] keycode;
 
-wire [8:0] newChar;
+wire [6:0] char;
+wire [6:0] newChar;
 wire cready;
 wire isCharInserted;
 
@@ -45,9 +46,12 @@ PS2Receiver keyboard (
 );
 
 assign LED [7:0] = keycode[7:0];
-
+mapto7bitacsii mta(
+    .keycode(keycode[7:0]),
+    .ascii(newChar)
+);
 caeserEncoder ced(
-    .char(keycode[7:0]),
+    .char(char),
     .switch(SW[0]),
     .newChar(newChar),
     .isCharInserted(isCharInserted),

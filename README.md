@@ -101,4 +101,4 @@ The diagram below explains this process flow of this project:
 ![](figures/fig77.png)
 
 Schematic design
-![](figures/fig88.png)
+![](figures/fig99.png)

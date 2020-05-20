@@ -37,6 +37,7 @@ read_verilog -library xil_defaultlib {
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/keyboard/debouncer.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/font_rom.v
+  /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/new/mapto7bitacsii.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/vga_image.v
   /home/malak/sites/addproject/caesar_cipher/caesar_cipher.srcs/sources_1/imports/imports/AHB_VGA/vga_sync.v

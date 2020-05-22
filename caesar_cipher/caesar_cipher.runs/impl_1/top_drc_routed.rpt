@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Wed May 20 09:42:38 2020
+| Date         : Fri May 22 05:30:30 2020
 | Host         : malak running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : top
@@ -24,12 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 22
+             Violations found: 23
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
 | CHECK-3   | Warning  | Report rule limit reached                           | 1          |
+| PDRC-153  | Warning  | Gated clock check                                   | 1          |
 | REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
 +-----------+----------+-----------------------------------------------------+------------+
 
@@ -51,6 +52,11 @@ Related violations: <none>
 CHECK-3#1 Warning
 Report rule limit reached  
 REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net keyboard/keycode_reg[6]_0 is a gated clock net sourced by a combinational pin keyboard/newChar_reg[0]_i_2/O, cell keyboard/newChar_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 REQP-1839#1 Warning

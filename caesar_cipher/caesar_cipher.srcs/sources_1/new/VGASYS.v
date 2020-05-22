@@ -25,6 +25,10 @@ module VGASYS(
     input  wire          CLK,                // Oscillator - 100MHz
     input  wire          RESET,              // Reset
 
+    // Data
+    input wire [7:0] char,
+    input wire hreadys,
+    
     // TO BOARD LEDs
     output wire    [7:0] LED,
     
@@ -33,19 +37,8 @@ module VGASYS(
     output wire    [2:0] vgaGreen,
     output wire    [1:0] vgaBlue,
     output wire          Hsync,          // VGA Horizontal Sync
-    output wire          Vsync,          // VGA Vertical Sync
+    output wire          Vsync          // VGA Vertical Sync
 
-
-    
-    // Debug
-    input  wire          TDI,                // JTAG TDI
-    input  wire          TCK,                // SWD Clk / JTAG TCK
-    inout  wire          TMS,                // SWD I/O / JTAG TMS
-    output wire          TDO,                 // SWV     / JTAG TDO
-    
-    // Data
-    input wire [7:0] char,
-    input wire hreadys
     );
 
     // Clock
@@ -121,23 +114,11 @@ module VGASYS(
     wire    [1:0] hresps = 2'b00;            // System generates no error response
     wire          exresps = 1'b0;
 
-    // Debug signals (TDO pin is used for SWV unless JTAG mode is active)
-    wire          dbg_tdo;                   // SWV / JTAG TDO
-    wire          dbg_tdo_nen;               // SWV / JTAG TDO tristate enable (active low)
-    wire          dbg_swdo;                  // SWD I/O 3-state output
-    wire          dbg_swdo_en;               // SWD I/O 3-state enable
-    wire          dbg_jtag_nsw;              // SWD in JTAG state (HIGH)
-    wire          dbg_swo;                   // Serial wire viewer/output
-    wire          tdo_enable     = !dbg_tdo_nen | !dbg_jtag_nsw;
-    wire          tdo_tms        = dbg_jtag_nsw         ? dbg_tdo    : dbg_swo;
-    assign        TMS            = dbg_swdo_en          ? dbg_swdo   : 1'bz;
-    assign        TDO            = tdo_enable           ? tdo_tms    : 1'bz;
-
     // CoreSight requires a loopback from REQ to ACK for a minimal
     // debug power control implementation
-    wire          cpu0cdbgpwrupreq;
-    wire          cpu0cdbgpwrupack;
-    assign        cpu0cdbgpwrupack = cpu0cdbgpwrupreq;
+//    wire          cpu0cdbgpwrupreq;
+//    wire          cpu0cdbgpwrupack;
+//    assign        cpu0cdbgpwrupack = cpu0cdbgpwrupreq;
 
 
 

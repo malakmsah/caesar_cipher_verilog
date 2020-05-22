@@ -1,13 +1,10 @@
 
 module top(
-    input CLK100MHZ,
-    input  wire          BTNC,    // for reset
+    input  wire CLK100MHZ,
+    input  wire BTNC,    // for reset
     input PS2_CLK,
     input PS2_DATA,
     input [0:0] SW,
-    output [6:0]SEG,
-    output [7:0]AN,
-    output DP,
     output [15:0] LED,
     output UART_TXD, // *
     
@@ -16,74 +13,63 @@ module top(
     output wire    [2:0] vgaGreen,
     output wire    [1:0] vgaBlue,
     output wire          Hsync,          // VGA Horizontal Sync
-    output wire          Vsync,          // VGA Vertical Sync
-
-     // Debug
-    input  wire          TDI,                // JTAG TDI
-    input  wire          TCK,                // SWD Clk / JTAG TCK
-    inout  wire          TMS,                // SWD I/O / JTAG TMS
-    output wire          TDO                 // SWV     / JTAG TDO
+    output wire          Vsync//,          // VGA Vertical Sync
+//    output wire [31:0] keycodeo,
+//    output wire isCharInserted,
+//    output wire [6:0] newChar,
+//    output wire cready
     );
     
-reg CLK50MHZ = 0;    
+   
 wire [31:0] keycode;
 
 wire [6:0] char;
-wire [6:0] newChar;
-wire cready;
-wire isCharInserted;
+//wire [6:0] newChar;
+wire [6:0] ascii7b;
+//wire cready;
+//wire isCharInserted;
 
+reg CLK50MHZ = 0; 
 always @(posedge(CLK100MHZ))begin
     CLK50MHZ <= ~CLK50MHZ;
 end
 
 PS2Receiver keyboard (
-.clk(CLK50MHZ),
-.kclk(PS2_CLK),
-.kdata(PS2_DATA),
-.keycodeout(keycode[31:0]),
-.isCharInserted(isCharInserted)
+    .clk(CLK50MHZ),
+    .kclk(PS2_CLK),
+    .kdata(PS2_DATA),
+    .keycodeout(keycode[31:0]),
+    .isCharInserted(isCharInserted)
 );
 
+assign keycodeo =  keycode;
 assign LED [7:0] = keycode[7:0];
+
 mapto7bitacsii mta(
     .keycode(keycode[7:0]),
-    .ascii(newChar)
+    .ascii(ascii7b)
 );
+
 caeserEncoder ced(
-    .char(char),
+    .char(ascii7b),
     .switch(SW[0]),
-    .newChar(newChar),
     .isCharInserted(isCharInserted),
+    .newChar(newChar),
     .cready(cready)
 );
 
-//assign LED [15:8] = newChar[7:0];
-
-//seg7decimal sevenSeg (
-//.x(keycode[31:0]),
-//.clk(CLK100MHZ),
-//.seg(SEG[6:0]),
-//.an(AN[7:0]),
-//.dp(DP) 
-//);
-
-  // AHBLite VGA Controller  
+// AHBLite VGA Controller  
 VGASYS vgasys1(
     .CLK(CLK100MHZ),
-    .RESET(BTNC),
+    .RESET(BTNC),    
+    .char(newChar),
+    .hreadys(cready),
     .LED(LED[15:8]),
     .vgaRed(vgaRed),
     .vgaGreen(vgaGreen),
     .vgaBlue(vgaBlue),
     .Hsync(Hsync),        
-    .Vsync(Vsync),        
-    .TDI(TDI),
-    .TCK(TCK),        
-    .TMS(TMS),        
-    .TDO(TDO),
-    .char(newChar),
-    .hreadys(cready)
+    .Vsync(Vsync)
     );
  
 endmodule

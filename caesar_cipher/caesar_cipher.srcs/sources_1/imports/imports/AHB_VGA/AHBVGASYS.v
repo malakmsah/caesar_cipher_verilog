@@ -56,31 +56,31 @@ module AHBVGA(
   localparam CONSOLEADDR = 4'h0;
   
   //Internal AHB signals
-  reg last_HWRITE;
-  reg last_HSEL;
-  reg [1:0] last_HTRANS;
+  reg        last_HWRITE;
+  reg        last_HSEL;
+  reg [1:0]  last_HTRANS;
   reg [31:0] last_HADDR;
   
   wire [7:0] console_rgb; //console rgb signal              
   wire [9:0] pixel_x;     //current x pixel
   wire [9:0] pixel_y;     //current y pixel
   
-  reg console_write;      //write to console
-  reg [7:0] console_wdata;//data to write to console
-  reg image_write;        //write to image
-  reg [7:0] image_wdata;  //data to write to image
+  reg        console_write;      //write to console
+  reg  [7:0] console_wdata;//data to write to console
+  reg        image_write;        //write to image
+  reg  [7:0] image_wdata;  //data to write to image
   
   wire [7:0] image_rgb;   //image color
   
-  wire scroll;            //scrolling signal
+  wire       scroll;            //scrolling signal
   
-  wire sel_console;       
-  wire sel_image;
-  reg [7:0] cin;
+  wire       sel_console;       
+  wire       sel_image;
+  reg  [7:0] cin;
   
   
-  always @(posedge HCLK)
-  if(HREADY)
+  always @(posedge HREADY)
+  //if(HREADY)
     begin
       last_HADDR <= HADDR;
       last_HWRITE <= HWRITE;

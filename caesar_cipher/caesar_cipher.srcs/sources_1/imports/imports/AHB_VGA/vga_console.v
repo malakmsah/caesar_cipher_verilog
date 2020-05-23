@@ -54,47 +54,47 @@ module vga_console(
   localparam MAX_Y = 30;      //Number of tile rows
   
   //Font ROM
-  wire [10:0] rom_addr;       
-  wire [6:0] char_addr;
-  wire [3:0] row_addr;
-  wire [2:0] bit_addr;
-  wire [7:0] font_word;
-  wire font_bit;
+  wire [10:0]   rom_addr;       
+  wire [6:0]    char_addr;
+  wire [3:0]    row_addr;
+  wire [2:0]    bit_addr;
+  wire [7:0]    font_word;
+  wire          font_bit;
   
   //Dual port RAM
-  wire [11:0] addr_r;
-  wire [11:0] addr_w;
-  wire [6:0] din;
-  wire [6:0] dout;
+  wire [11:0]   addr_r;
+  wire [11:0]   addr_w;
+  wire [6:0]    din;
+  wire [6:0]    dout;
   
   //Cursor
-  reg [6:0] cur_x_reg;
-  wire [6:0] cur_x_next;
-  reg [4:0] cur_y_reg;
-  wire [4:0] cur_y_next;
+  reg  [6:0]    cur_x_reg;
+  wire [6:0]    cur_x_next;
+  reg  [4:0]    cur_y_reg;
+  wire [4:0]    cur_y_next;
 //  wire cursor_on;
   
   //pixel buffers
-  reg [9:0] pixel_x1;
-  reg [9:0] pixel_x2;
-  reg [9:0] pixel_y1;
-  reg [9:0] pixel_y2;
+  reg  [9:0]    pixel_x1;
+  reg  [9:0]    pixel_x2;
+  reg  [9:0]    pixel_y1;
+  reg  [9:0]    pixel_y2;
   
-  wire [7:0] font_rgb;      //color for text
-  wire [7:0] font_inv_rgb;  //color for text with cursor on top
+  wire [7:0]    font_rgb;      //color for text
+  wire [7:0]    font_inv_rgb;  //color for text with cursor on top
   
-  reg current_state;
-  reg next_state;
+  reg           current_state;
+  reg           next_state;
   
-  wire return_key;      //carriage return or '\n'
-  wire new_line;        //move cursor to next line
+  wire          return_key;      //carriage return or '\n'
+  wire          new_line;        //move cursor to next line
   
   //reg scroll;
-  reg scroll_next;
-  reg [4:0] yn;         //row count
-  reg [4:0] yn_next;    
-  reg [6:0] xn;         //horizontal count
-  reg [6:0] xn_next;
+  reg           scroll_next;
+  reg  [4:0]    yn;         //row count
+  reg  [4:0]    yn_next;    
+  reg  [6:0]    xn;         //horizontal count
+  reg  [6:0]    xn_next;
   
   //Module Instantiation
   font_rom ufont_rom(

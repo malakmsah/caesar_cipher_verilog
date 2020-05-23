@@ -22,7 +22,8 @@
 // Convert keyboard encoding to 7 bit ascii encoding
 module mapto7bitacsii(
     input  wire [7:0] keycode,
-    output reg  [6:0] ascii
+    output reg  [6:0] ascii,
+    output reg        isCharMapped
 );
     
 
@@ -72,6 +73,8 @@ begin
         
         default: ascii=7'b0000000;  
     endcase
+    
+    isCharMapped = 1;
+end
   
-  end  
 endmodule

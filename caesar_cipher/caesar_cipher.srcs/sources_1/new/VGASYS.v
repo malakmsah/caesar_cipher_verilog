@@ -22,24 +22,27 @@
 
 module VGASYS(
 
-    input  wire          CLK,                // Oscillator - 100MHz
-    input  wire          RESET,              // Reset
+    input  wire           CLK,                // Oscillator - 100MHz
+    input  wire           RESET,              // Reset
 
     // Data
-    input wire [7:0] char,
-    input wire hreadys,
+    input  wire     [7:0] char,
+    input  wire           hreadys,
     
     // TO BOARD LEDs
-    output wire    [7:0] LED,
+    output  wire    [7:0] LED,
     
    // VGA IO
-    output wire    [2:0] vgaRed,
-    output wire    [2:0] vgaGreen,
-    output wire    [1:0] vgaBlue,
-    output wire          Hsync,          // VGA Horizontal Sync
-    output wire          Vsync          // VGA Vertical Sync
+    output  wire    [2:0] vgaRed,
+    output  wire    [2:0] vgaGreen,
+    output  wire    [1:0] vgaBlue,
+    output  wire          Hsync,          // VGA Horizontal Sync
+    output  wire          Vsync,          // VGA Vertical Sync
+    
+    // Control
+    output  wire        isCharDisplayed
 
-    );
+ );
 
     // Clock
     wire          fclk;                      // Free running clock
@@ -82,6 +85,7 @@ module VGASYS(
     begin
         clk_div=~clk_div;
     end
+    
     BUFG BUFG_CLK (
         .O(fclk),
         .I(clk_div)
@@ -101,43 +105,34 @@ module VGASYS(
     end
 
     // CPU System Bus
-    wire          hresetn = reset_sync_reg[4];
-    wire   [31:0] haddrs = {32{1'b0}}; 
-    wire    [2:0] hbursts; 
-    wire          hmastlocks; 
-    wire    [3:0] hprots; 
-    wire    [2:0] hsizes; 
-    wire    [1:0] htranss = 11; 
-    wire    [31:0] hwdatas = { {25{1'b0}}, char };//7'b1001101; 
-    wire          hwrites = 1; 
-    wire   [31:0] hrdatas; 
-    wire    [1:0] hresps = 2'b00;            // System generates no error response
-    wire          exresps = 1'b0;
+    wire           hresetn = reset_sync_reg[4];
+    wire   [31:0]  haddrs = {32{1'b0}}; 
+    wire    [2:0]  hbursts; 
+    wire           hmastlocks; 
+    wire    [3:0]  hprots; 
+    wire    [2:0]  hsizes; 
+    wire    [1:0]  htranss = 11; 
+    wire   [31:0]  hwdatas = { {25{1'b0}}, char };//7'b1001101; 
+    wire           hwrites = 1; 
+    wire   [31:0]  hrdatas; 
+    wire    [1:0]  hresps = 2'b00;            // System generates no error response
+    wire           exresps = 1'b0;
 
-    // CoreSight requires a loopback from REQ to ACK for a minimal
-    // debug power control implementation
-//    wire          cpu0cdbgpwrupreq;
-//    wire          cpu0cdbgpwrupack;
-//    assign        cpu0cdbgpwrupack = cpu0cdbgpwrupreq;
-
-
-
-  // AHBLite VGA Controller  
-AHBVGA uAHBVGA (
-    .HCLK(fclk), 
-    .HRESETn(hresetn), 
-    .HADDR(haddrs), 
-    .HWDATA(hwdatas), 
-    .HREADY(hreadys), 
-    .HWRITE(hwrites), 
-    .HTRANS(htranss), 
-    .HSEL(hsel_vga), 
-    .HRDATA(hrdata_vga), 
-    .HREADYOUT(hready_vga), 
-    .hsync(Hsync), 
-    .vsync(Vsync), 
-    .rgb({vgaRed,vgaGreen,vgaBlue})
-);
-           
+    // AHBLite VGA Controller  
+    AHBVGA uAHBVGA (
+        .HCLK(fclk), 
+        .HRESETn(hresetn), 
+        .HADDR(haddrs), 
+        .HWDATA(hwdatas), 
+        .HREADY(hreadys), 
+        .HWRITE(hwrites), 
+        .HTRANS(htranss), 
+        .HSEL(hsel_vga), 
+        .HRDATA(hrdata_vga), 
+        .HREADYOUT(hready_vga), 
+        .hsync(Hsync), 
+        .vsync(Vsync), 
+        .rgb({vgaRed,vgaGreen,vgaBlue})
+    );
  
 endmodule

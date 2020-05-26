@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/PS2Receiver.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/VGASYS.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/caeserEncoder.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/debouncer.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/font_rom.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/top.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/vga_console.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/vga_image.v" \
+"../../../../caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/vga_sync.v" \
+"../../../../caeser_cipher_with_paths.srcs/sim_1/imports/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

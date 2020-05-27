@@ -26,7 +26,7 @@ module VGASYS(
     input  wire          RESET,              // Reset
 
     // Data
-    input wire [7:0] char,
+    input wire [6:0] char,
     input wire hreadys,
     
     // TO BOARD LEDs
@@ -40,7 +40,7 @@ module VGASYS(
     output wire          Vsync,          // VGA Vertical Sync
 
     // status
-    output reg         isCharDisplayed
+    output wire         isCharDisplayed
     );
 
     // Clock
@@ -110,24 +110,22 @@ module VGASYS(
     wire    [2:0] hsizes; 
     wire    [1:0] htranss = 11; 
     wire    [31:0] hwdatas = { {25{1'b0}}, char };//7'b1001101; 
-    reg            hwrites;// = 1; 
+    reg            hwrites = 1; 
     wire   [31:0] hrdatas; 
     wire    [1:0] hresps = 2'b00;            // System generates no error response
     wire          exresps = 1'b0;
 
     
 
-    initial begin
-    
-        isCharDisplayed <= 1'b0;
-                hwrites <= 1;
-    end
+//    initial begin
+//                hwrites <= 0;
+//    end
 
 
-    always @(posedge hreadys)
-    begin
-        hwrites = 1;
-    end
+//    always @(posedge hreadys)
+//    begin
+//        hwrites = 1;
+//    end
 
 
   // AHBLite VGA Controller  
@@ -144,7 +142,8 @@ AHBVGA uAHBVGA (
     .HREADYOUT(hready_vga), 
     .hsync(Hsync), 
     .vsync(Vsync), 
-    .rgb({vgaRed,vgaGreen,vgaBlue})
+    .rgb({vgaRed,vgaGreen,vgaBlue}),
+    .isCharDisplayed(isCharDisplayed)
 );
            
  

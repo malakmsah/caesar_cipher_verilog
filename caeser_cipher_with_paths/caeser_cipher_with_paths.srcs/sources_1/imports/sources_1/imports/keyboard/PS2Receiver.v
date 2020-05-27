@@ -29,10 +29,6 @@ module PS2Receiver(
     output reg isCharInserted
     );
     
-      
-    initial begin
-        isCharInserted = 0;
-    end
     
     wire kclkf;
     wire kdataf;
@@ -93,8 +89,10 @@ begin
 if(insertChar == 1)
 begin
   keycodeout = keycode;
-  isCharInserted = (keycode[7:0] != 8'b00000000);
-  end    
+  isCharInserted = 1; //(keycode[7:0] != 8'b00000000);
+  end 
+  else
+  isCharInserted = 0;   
 end
 
 endmodule

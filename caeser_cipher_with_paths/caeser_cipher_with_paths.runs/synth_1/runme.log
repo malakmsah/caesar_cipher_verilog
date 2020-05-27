@@ -1,0 +1,860 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20793 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1990.598 ; gain = 201.715 ; free physical = 198 ; free virtual = 1684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/PS2Receiver.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (2#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mapto7bitacsii' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v:23]
+WARNING: [Synth 8-153] case item 32'b0000000000000000000000000001zzzz will never be executed [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'mapto7bitacsii' (3#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v:23]
+INFO: [Synth 8-6157] synthesizing module 'caeserEncoder' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/caeserEncoder.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'caeserEncoder' (4#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/caeserEncoder.v:24]
+INFO: [Synth 8-6157] synthesizing module 'AHBLITE_SYS' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/FPGA/AHBLITE_SYS.v:37]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'AHBVGA' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:37]
+	Parameter IMAGEADDR bound to: 4'b1010 
+	Parameter CONSOLEADDR bound to: 4'b0000 
+INFO: [Synth 8-6157] synthesizing module 'VGAInterface' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_sync.v:37]
+	Parameter VertTimeToPulseWidthEnd bound to: 10'b0000000010 
+	Parameter VertTimeToBackPorchEnd bound to: 10'b0000011111 
+	Parameter VertTimeToDisplayTimeEnd bound to: 10'b0111111111 
+	Parameter VertTimeToFrontPorchEnd bound to: 10'b1000001001 
+	Parameter HorzTimeToPulseWidthEnd bound to: 10'b0001100000 
+	Parameter HorzTimeToBackPorchEnd bound to: 10'b0010010000 
+	Parameter HorzTimeToDisplayTimeEnd bound to: 10'b1100010000 
+	Parameter HorzTimeToFrontPorchEnd bound to: 10'b1100100000 
+INFO: [Synth 8-6157] synthesizing module 'GenericCounter' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v:38]
+	Parameter COUNTER_WIDTH bound to: 1 - type: integer 
+	Parameter COUNTER_MAX bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'GenericCounter' (6#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v:38]
+WARNING: [Synth 8-7023] instance 'FreqDivider' of module 'GenericCounter' has 5 connections declared, but only 4 given [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_sync.v:66]
+INFO: [Synth 8-6157] synthesizing module 'GenericCounter__parameterized0' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v:38]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter COUNTER_MAX bound to: 10'b1100100000 
+INFO: [Synth 8-6155] done synthesizing module 'GenericCounter__parameterized0' (6#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'GenericCounter__parameterized1' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v:38]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter COUNTER_MAX bound to: 10'b1000001001 
+INFO: [Synth 8-6155] done synthesizing module 'GenericCounter__parameterized1' (6#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/imports/AHB_VGA/counter.v:38]
+WARNING: [Synth 8-7023] instance 'VertAddrCounter' of module 'GenericCounter' has 5 connections declared, but only 4 given [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_sync.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'VGAInterface' (7#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_sync.v:37]
+INFO: [Synth 8-6157] synthesizing module 'vga_console' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:38]
+	Parameter MAX_X bound to: 30 - type: integer 
+	Parameter MAX_Y bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/font_rom.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (8#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/font_rom.v:37]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram_sync' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:37]
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 7 - type: integer 
+WARNING: [Synth 8-3936] Found unconnected internal register 'reset_n_buf_reg' and it is trimmed from '2' to '1' bits. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram_sync' (9#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:37]
+WARNING: [Synth 8-6014] Unused sequential element pixel_y1_reg was removed.  [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:133]
+WARNING: [Synth 8-6014] Unused sequential element pixel_y2_reg was removed.  [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:134]
+WARNING: [Synth 8-5788] Register pixel_x1_reg in module vga_console is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:131]
+WARNING: [Synth 8-5788] Register pixel_x2_reg in module vga_console is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'vga_console' (10#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:38]
+INFO: [Synth 8-6157] synthesizing module 'vga_image' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_image.v:38]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram_sync__parameterized0' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:37]
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+WARNING: [Synth 8-3936] Found unconnected internal register 'reset_n_buf_reg' and it is trimmed from '2' to '1' bits. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram_sync__parameterized0' (10#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:37]
+WARNING: [Synth 8-689] width (16) of port connection 'addr_b' does not match port width (15) of module 'dual_port_ram_sync__parameterized0' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_image.v:72]
+WARNING: [Synth 8-3936] Found unconnected internal register 'address_reg_reg' and it is trimmed from '16' to '15' bits. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_image.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'vga_image' (11#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_image.v:38]
+WARNING: [Synth 8-3848] Net HRDATA in module/entity AHBVGA does not have driver. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:47]
+WARNING: [Synth 8-3848] Net displayChar in module/entity AHBVGA does not have driver. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'AHBVGA' (12#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:37]
+WARNING: [Synth 8-6104] Input port 'displayChar' has an internal driver [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/FPGA/AHBLITE_SYS.v:188]
+WARNING: [Synth 8-6014] Unused sequential element controll_reg was removed.  [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/FPGA/AHBLITE_SYS.v:194]
+WARNING: [Synth 8-6014] Unused sequential element controll_reg was removed.  [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/FPGA/AHBLITE_SYS.v:202]
+WARNING: [Synth 8-3848] Net sys_reset_req in module/entity AHBLITE_SYS does not have driver. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/FPGA/AHBLITE_SYS.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'AHBLITE_SYS' (13#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/FPGA/AHBLITE_SYS.v:37]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:3]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+	Parameter S3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:46]
+INFO: [Synth 8-226] default block is never used [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (14#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:3]
+WARNING: [Synth 8-3848] Net UART_TXD in module/entity top does not have driver. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/top.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/top.v:1]
+WARNING: [Synth 8-3331] design vga_image has unconnected port pixel_x[9]
+WARNING: [Synth 8-3331] design vga_image has unconnected port pixel_y[9]
+WARNING: [Synth 8-3331] design vga_image has unconnected port pixel_y[1]
+WARNING: [Synth 8-3331] design vga_image has unconnected port pixel_y[0]
+WARNING: [Synth 8-3331] design vga_image has unconnected port address[15]
+WARNING: [Synth 8-3331] design vga_console has unconnected port pixel_y[9]
+WARNING: [Synth 8-3331] design vga_console has unconnected port font_data[7]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[31]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[30]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[29]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[28]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[27]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[26]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[25]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[24]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[23]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[22]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[21]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[20]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[19]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[18]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[17]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[16]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[15]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[14]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[13]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[12]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[11]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[10]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[9]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[8]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[7]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[6]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[5]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[4]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[3]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[2]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[1]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HRDATA[0]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[31]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[30]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[29]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[28]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[27]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[26]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[25]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[24]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[23]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[22]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[21]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[20]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[19]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[18]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[17]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[16]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[15]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[14]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[13]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[12]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[11]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[10]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[9]
+WARNING: [Synth 8-3331] design AHBVGA has unconnected port HWDATA[8]
+WARNING: [Synth 8-3331] design top has unconnected port UART_TXD
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2054.316 ; gain = 265.434 ; free physical = 224 ; free virtual = 1712
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.285 ; gain = 268.402 ; free physical = 223 ; free virtual = 1711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.285 ; gain = 268.402 ; free physical = 223 ; free virtual = 1711
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2064.223 ; gain = 0.000 ; free physical = 214 ; free virtual = 1702
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SEG[0]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[1]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[2]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[3]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[4]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[5]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[6]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DP'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TCK'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:304]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:304]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TDI'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:305]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:305]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TDO'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMS'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TDO'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMS'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMS'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TDI'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:311]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:311]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TDO'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:312]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TCK'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:313]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:313]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TCK'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:314]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports TCK]'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:314]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'TCK'. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:315]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc:315]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2222.035 ; gain = 0.000 ; free physical = 119 ; free virtual = 1623
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2222.035 ; gain = 0.000 ; free physical = 119 ; free virtual = 1623
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 192 ; free virtual = 1697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 192 ; free virtual = 1697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 192 ; free virtual = 1697
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/vga_console.v:156]
+INFO: [Synth 8-4471] merging register 'isCharDisplayed_reg' into 'console_write_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:142]
+WARNING: [Synth 8-3936] Found unconnected internal register 'last_HADDR_reg' and it is trimmed from '32' to '24' bits. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:88]
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'ascii_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'isCharMapped_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'isCharCiphered_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/caeserEncoder.v:71]
+INFO: [Synth 8-3971] The signal "dual_port_ram_sync:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "dual_port_ram_sync__parameterized0:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                             0001 |                               00
+                      S1 |                             0010 |                               01
+                      S2 |                             0100 |                               10
+                      S3 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'insertChar_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mapChar_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:92]
+WARNING: [Synth 8-327] inferring latch for variable 'cipherChar_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/new/FSM.v:112]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 180 ; free virtual = 1685
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               15 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---RAMs : 
+	             256K Bit         RAMs := 1     
+	              28K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 10    
+	  15 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	  15 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module caeserEncoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	  15 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module GenericCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module GenericCounter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module GenericCounter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module VGAInterface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module font_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module dual_port_ram_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              28K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_console 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+Module dual_port_ram_sync__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             256K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_image 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+Module AHBVGA 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module AHBLITE_SYS 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'vgasys1/uAHBVGA/uvga_image/uimage_ram/reset_n_buf_reg[0:0]' into 'vgasys1/uAHBVGA/uvga_console/uvideo_ram/reset_n_buf_reg[0:0]' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/dual_port_ram_sync.v:64]
+INFO: [Synth 8-4471] merging register 'vgasys1/uAHBVGA/last_HWRITE_reg' into 'vgasys1/uAHBVGA/last_HSEL_reg' [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/imports/AHB_VGA/AHBVGASYS.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'keyboard/keycodeout_reg' and it is trimmed from '32' to '8' bits. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/PS2Receiver.v:91]
+WARNING: [Synth 8-3936] Found unconnected internal register 'keyboard/keycode_reg' and it is trimmed from '32' to '24' bits. [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/imports/keyboard/PS2Receiver.v:79]
+WARNING: [Synth 8-3331] design top has unconnected port UART_TXD
+RAM Pipeline Warning: Read Address Register Found For RAM vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM "top/vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg to conserve power
+RAM Pipeline Warning: Read Address Register Found For RAM vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM "top/vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 8 RAM instances of RAM vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg to conserve power
+RAM Pipeline Warning: Read Address Register Found For RAM vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/console_wdata_reg[7]' (FDC) to 'vgasys1/uAHBVGA/image_wdata_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vgasys1/uAHBVGA/image_wdata_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fsm_t/insertChar_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fsm_t/mapChar_reg )
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HTRANS_reg[0]' (FD) to 'vgasys1/uAHBVGA/last_HTRANS_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HTRANS_reg[1]' (FD) to 'vgasys1/uAHBVGA/last_HSEL_reg'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vgasys1/uAHBVGA/last_HSEL_reg )
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[22]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[23]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[23]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[21]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[21]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[20]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[20]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[19]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[19]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[18]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[17]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[17]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[16]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[16]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[15]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[14]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[13]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[12]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[11]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[10]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[9]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[8]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[7]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[6]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[5]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[4]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[3]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[2]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HADDR_reg[1]' (FD) to 'vgasys1/uAHBVGA/last_HADDR_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vgasys1/uAHBVGA/last_HADDR_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fsm_t/cipherChar_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\keyboard/isCharInserted_reg )
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/last_HSEL_reg' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[1]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[2]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[3]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[4]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[5]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[6]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[7]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[8]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[9]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[10]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[11]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[12]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[13]' (FD) to 'vgasys1/uAHBVGA/uvga_image/address_reg_reg[14]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vgasys1/uAHBVGA/uvga_image/address_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ced/isCharCiphered_reg )
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mta/ascii_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ced/isCharCiphered_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_t/insertChar_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_t/mapChar_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_t/cipherChar_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (fsm_t/done_reg) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 161 ; free virtual = 1672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+-----------------------------------------------------+---------------+----------------+
+|Module Name    | RTL Object                                          | Depth x Width | Implemented As | 
++---------------+-----------------------------------------------------+---------------+----------------+
+|mapto7bitacsii | ascii                                               | 256x7         | LUT            | 
+|top            | keyboard/keycodeout_reg_rep                         | 256x7         | Block RAM      | 
+|top            | vgasys1/uAHBVGA/uvga_console/ufont_rom/addr_reg_reg | 2048x8        | Block RAM      | 
++---------------+-----------------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg | 4 K x 7(READ_FIRST)    | W |   | 4 K x 7(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|top         | vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg   | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++------------+-------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 125 ; free virtual = 1470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 136 ; free virtual = 1461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+-------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg | 4 K x 7(READ_FIRST)    | W |   | 4 K x 7(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|top         | vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg   | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++------------+-------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_1' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_2' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_3' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_4' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_5' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_6' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_7' (RAMB36E1_1) to 'vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[0]' (FDR) to 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[1]' (FDR) to 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[2]' (FDR) to 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[3]' (FDR) to 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[5]' (FDR) to 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[6]' (FDR) to 'vgasys1/uAHBVGA/uVGAInterface/cout_reg[7]'
+INFO: [Synth 8-7053] The timing for the instance vgasys1/uAHBVGA/uvga_console/uvideo_ram/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance vgasys1/uAHBVGA/uvga_image/uimage_ram/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance keyboard/keycodeout_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance vgasys1/uAHBVGA/uvga_console/ufont_rom/addr_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 135 ; free virtual = 1460
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    12|
+|3     |LUT1       |    15|
+|4     |LUT2       |    43|
+|5     |LUT3       |    22|
+|6     |LUT4       |    39|
+|7     |LUT5       |    51|
+|8     |LUT6       |    94|
+|9     |MUXF7      |     1|
+|10    |RAMB18E1   |     1|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB36E1   |     1|
+|13    |RAMB36E1_1 |     1|
+|14    |FDCE       |    41|
+|15    |FDPE       |     1|
+|16    |FDRE       |   134|
+|17    |FDSE       |     1|
+|18    |LD         |     1|
+|19    |IBUF       |     5|
+|20    |OBUF       |    26|
+|21    |OBUFT      |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------+-----------------------------------+------+
+|      |Instance                |Module                             |Cells |
++------+------------------------+-----------------------------------+------+
+|1     |top                     |                                   |   493|
+|2     |  ced                   |caeserEncoder                      |     3|
+|3     |  fsm_t                 |FSM                                |     7|
+|4     |  keyboard              |PS2Receiver                        |   144|
+|5     |    debounce            |debouncer                          |    29|
+|6     |  mta                   |mapto7bitacsii                     |     2|
+|7     |  vgasys1               |AHBLITE_SYS                        |   302|
+|8     |    uAHBVGA             |AHBVGA                             |   295|
+|9     |      uVGAInterface     |VGAInterface                       |   107|
+|10    |        FreqDivider     |GenericCounter                     |     3|
+|11    |        HorzAddrCounter |GenericCounter__parameterized0     |    39|
+|12    |        VertAddrCounter |GenericCounter__parameterized1     |    34|
+|13    |      uvga_console      |vga_console                        |   156|
+|14    |        ufont_rom       |font_rom                           |     4|
+|15    |        uvideo_ram      |dual_port_ram_sync                 |    81|
+|16    |      uvga_image        |vga_image                          |    23|
+|17    |        uimage_ram      |dual_port_ram_sync__parameterized0 |    23|
++------+------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 137 ; free virtual = 1472
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2222.035 ; gain = 268.402 ; free physical = 191 ; free virtual = 1526
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2222.035 ; gain = 433.152 ; free physical = 191 ; free virtual = 1526
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2222.035 ; gain = 0.000 ; free physical = 182 ; free virtual = 1520
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2222.035 ; gain = 0.000 ; free physical = 199 ; free virtual = 1541
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 133 Warnings, 28 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2222.035 ; gain = 700.070 ; free physical = 330 ; free virtual = 1673
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2222.035 ; gain = 0.000 ; free physical = 330 ; free virtual = 1673
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 27 23:37:03 2020...

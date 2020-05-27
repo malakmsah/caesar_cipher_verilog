@@ -49,7 +49,10 @@ module AHBVGA(
   
   output wire hsync,
   output wire vsync,
-  output wire [7:0] rgb
+  output wire [7:0] rgb,       
+  output wire displayChar,
+
+    output reg          isCharDisplayed
 );
   //Register locations
   localparam IMAGEADDR = 4'hA;
@@ -130,22 +133,25 @@ module AHBVGA(
   assign sel_image = (last_HADDR[23:0] != 12'h000000000000);
   
   //Set console write and write data
-  always @(posedge HCLK, negedge HRESETn) //  HREADY
+  always @(posedge HCLK, negedge HRESETn)
   begin
     if(!HRESETn)
       begin
         console_write <= 0;
         console_wdata <= 0;
+        isCharDisplayed <= 0;
       end
-    else if(last_HWRITE & last_HSEL & last_HTRANS[1] & HREADYOUT & sel_console)
+    else if(last_HWRITE & last_HSEL & last_HTRANS[1] & HREADYOUT & sel_console & displayChar)
       begin
         console_write <= 1'b1;
         console_wdata <= HWDATA[7:0];
+        isCharDisplayed <= 1;
       end
     else
       begin
         console_write <= 1'b0;
         console_wdata <= 0;
+        isCharDisplayed <= 0;
       end
   end
   

@@ -21,8 +21,6 @@
 
 // Convert keyboard encoding to 7 bit ascii encoding
 module mapto7bitacsii(
-    input wire clk ,
-    input wire clr ,
     input  wire       mapChar,
     input  wire [7:0] keycode,
     output reg  [6:0] ascii,
@@ -33,7 +31,7 @@ initial begin
 isCharMapped = 0;
 end
 
-always @(posedge clk or posedge clr) 
+always @(*) 
 begin
     if( mapChar == 1)
     begin

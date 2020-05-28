@@ -33,3 +33,10 @@ source mapto7bitacsii_tb.tcl
 close_sim
 launch_simulation
 source mapto7bitacsii_tb.tcl
+close_sim
+launch_simulation
+source mapto7bitacsii_tb.tcl
+close_sim
+close_sim
+launch_simulation
+source mapto7bitacsii_tb.tcl

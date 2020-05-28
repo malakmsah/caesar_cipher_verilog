@@ -26,14 +26,10 @@ module mapto7bitacsii(
     output reg  [6:0] ascii,
     output reg        isCharMapped
 );
-    
-initial begin
-isCharMapped = 0;
-end
 
 always @(*) 
 begin
-    if( mapChar == 1)
+    if(mapChar == 1)
     begin
         case (keycode)    
             'h45: ascii= 7'b0110000;//0)
@@ -67,20 +63,23 @@ begin
             'h2D: ascii= 7'b1110010;//R
             'h1B: ascii= 7'b1110011;//S
             'h2C: ascii= 7'b1110100;//T
-            'h3C: ascii= 7'b1110101;//U
-            'h2A: ascii= 7'b1110110;//V
-            'h1D: ascii= 7'b1110111;//W
-            'h22: ascii= 7'b1111000;//X
-            'h35: ascii= 7'b1111001;//Y
-            'h1Z: ascii= 7'b1111010;//Z
+            'h3C: ascii = 7'b1110101;//U
+            'h2A: ascii = 7'b1110110;//V
+            'h1D: ascii = 7'b1110111;//W
+            'h22: ascii = 7'b1111000;//X
+            'h35: ascii = 7'b1111001;//Y
+            'h1Z: ascii = 7'b1111010;//Z
             
-            'h29: ascii= 7'b0100000; //Space
+            'h29: ascii = 7'b0100000; //Space
             
-            default: ascii=7'b0000000;  
+            default: ascii =7'b0000000;  
         endcase
-        isCharMapped =1;
+        isCharMapped = 1;
     end
     else
-        ascii=7'b0000000; 
+    begin
+        ascii = 7'b0000000;
+        isCharMapped = 0;
+    end     
 end  
 endmodule

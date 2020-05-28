@@ -1,4 +1,4 @@
-Running: xsim.dir/mapto7bitacsii_tb_behav/xsimk -simmode gui -wdb mapto7bitacsii_tb_behav.wdb -simrunnum 0 -socket 51545
+Running: xsim.dir/mapto7bitacsii_tb_behav/xsimk -simmode gui -wdb mapto7bitacsii_tb_behav.wdb -simrunnum 0 -socket 37199
 Design successfully loaded
 Design Loading Memory Usage: 43964 KB (Peak: 44084 KB)
-Design Loading CPU Usage: 20 ms
+Design Loading CPU Usage: 30 ms

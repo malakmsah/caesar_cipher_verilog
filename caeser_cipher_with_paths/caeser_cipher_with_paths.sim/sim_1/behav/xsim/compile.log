@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mapto7bitacsii
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mapto7bitacsii_tb

@@ -70,11 +70,11 @@ always @(*)
 // C2 module
 always @(*)
     begin
-//    	insertChar  <= 0;
-//        mapChar     <= 0;
-//        cipherChar  <= 0;
-//        displayChar <= 0;
-//        done <= 0;
+    	insertChar  <= 0;
+        mapChar     <= 0;
+        cipherChar  <= 0;
+        displayChar <= 0;
+        done <= 0;
         
         case(present_state)
 		

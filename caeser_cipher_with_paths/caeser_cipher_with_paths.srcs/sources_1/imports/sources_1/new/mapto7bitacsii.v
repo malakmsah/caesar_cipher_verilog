@@ -78,7 +78,9 @@ begin
             
             default: ascii=7'b0000000;  
         endcase
-    isCharMapped =1;
+        isCharMapped =1;
     end
+    else
+        ascii=7'b0000000; 
 end  
 endmodule

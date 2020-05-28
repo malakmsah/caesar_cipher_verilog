@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed May 27 01:49:05 2020
-# Process ID: 21422
+# Start of session at: Thu May 28 11:56:21 2020
+# Process ID: 8648
 # Current directory: /home/malak/sites/addproject
 # Command line: vivado
 # Log file: /home/malak/sites/addproject/vivado.log
@@ -12,3 +12,24 @@
 start_gui
 open_project /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.xpr
 update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v w ]
+add_files -fileset sim_1 /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+source fsm_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mapto7bitacsii_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source mapto7bitacsii_tb.tcl
+close_sim
+launch_simulation
+source mapto7bitacsii_tb.tcl
+close_sim
+launch_simulation
+source mapto7bitacsii_tb.tcl

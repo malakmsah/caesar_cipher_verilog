@@ -1,0 +1,857 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 8648
+License: Customer
+
+Current time: 	Thu May 28 11:57:04 EEST 2020
+Time zone: 	Eastern European Standard Time (Asia/Amman)
+
+OS: Ubuntu
+OS Version: 5.3.0-53-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 145 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/malak/sites/addproject
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/malak/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/malak/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/malak/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/malak/sites/addproject/vivado.log
+Vivado journal file location: 	/home/malak/sites/addproject/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-8648-malak
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 872 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.xpr", 0); // r (O, cr)
+// [GUI Memory]: 74 MB (+74678kb) [00:00:17]
+// [Engine Memory]: 869 MB (+759859kb) [00:00:17]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 904 MB. GUI used memory: 49 MB. Current time: 5/28/20, 11:57:06 AM EEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+30504kb) [00:00:24]
+// [Engine Memory]: 1,035 MB (+128663kb) [00:00:24]
+// [Engine Memory]: 1,111 MB (+24636kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  3317 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// Project name: caeser_cipher_with_paths; location: /home/malak/sites/addproject/caeser_cipher_with_paths; part: xc7a100tcsg324-1
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 6675.883 ; gain = 193.645 ; free physical = 971 ; free virtual = 6012 
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 56 MB. Current time: 5/28/20, 11:57:22 AM EEST
+// [Engine Memory]: 1,167 MB (+1151kb) [00:00:53]
+// Elapsed time: 63 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // B (F, cr)
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mta : mapto7bitacsii (mapto7bitacsii.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mta : mapto7bitacsii (mapto7bitacsii.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 13, true); // B (F, cr) - Node
+selectCodeEditor("mapto7bitacsii.v", 88, 333); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 88, 333, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mapto7bitacsii_tb"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bB (cr):  Add Simulation Sources  : addNotify
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bB (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, caeserDecoder (caeserDecoder.v)]", 20, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, caeserDecoder (caeserDecoder.v)]", 20, false, false, false, false, false, true); // B (F, cr) - Double Click
+// [Engine Memory]: 1,235 MB (+9875kb) [00:02:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,240 MB. GUI used memory: 61 MB. Current time: 5/28/20, 11:59:01 AM EEST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 24); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, caeserEncoder_tb (caeserEncoder_tb.v)]", 17, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, caeserEncoder_tb (caeserEncoder_tb.v)]", 17, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// [GUI Memory]: 112 MB (+419kb) [00:02:19]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 269, 203); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 382, 216); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 296, 225); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 25, 166); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 24, 170); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // i (h, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mapto7bitacsii_tb (mapto7bitacsii_tb.v)]", 24, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mapto7bitacsii_tb (mapto7bitacsii_tb.v)]", 24, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 60, 366); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 30, 365); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 22, 356); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 22, 356, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton (cr, FindAndReplaceDialog)
+selectCodeEditor("mapto7bitacsii_tb.v", 59, 397); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 56, 390); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 50, 386); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 51, 387, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 38, 401); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 37, 400, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 157, 354); // ch (w, cr)
+selectComboBox("FindAndReplaceDialog.cr_Find what:", ",", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cr_Replace with:", ";", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton (cr, FindAndReplaceDialog)
+selectCodeEditor("mapto7bitacsii_tb.v", 245, 310); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 239, 399); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 195, 395); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,258 MB. GUI used memory: 62 MB. Current time: 5/28/20, 12:00:01 PM EEST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+selectCodeEditor("caeserEncoder_tb.v", 58, 222); // ch (w, cr)
+typeControlKey((HResource) null, "caeserEncoder_tb.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 14, 349); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 42, 412); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 59, 484); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 52, 506); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 38, 372); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 40, 385); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 46, 384); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 47, 384, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 36, 354); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 36, 354, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 37, 370); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 37, 370, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 46, 384); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 46, 384, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 63, 368); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 60, 368); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 56, 366); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 75, 377); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 73, 381); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 97, 357); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 114, 400); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 134, 429); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 31, 430); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 90, 350); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+// [GUI Memory]: 121 MB (+3071kb) [00:04:16]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 136, 247); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 136, 247, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 28, 429); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // i (h, cr)
+selectCodeEditor("top.v", 21, 185); // ch (w, cr)
+selectCodeEditor("top.v", 239, 225); // ch (w, cr)
+selectCodeEditor("top.v", 228, 230); // ch (w, cr)
+typeControlKey((HResource) null, "top.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 27, 463); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 30, 471); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 28, 494); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 201, 460); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+selectCodeEditor("caeserEncoder_tb.v", 8, 70); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+selectCodeEditor("caeserEncoder_tb.v", 14, 113); // ch (w, cr)
+selectCodeEditor("caeserEncoder_tb.v", 5, 112); // ch (w, cr)
+typeControlKey((HResource) null, "caeserEncoder_tb.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mapto7bitacsii_tb.v", 129, 500); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 101, 126); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 100, 126, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 62, 252); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 147, 268); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 114, 277); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 54, 211); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 55, 211, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectComboBox("FindAndReplaceDialog.cr_Replace with:", "mapChar", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton (cr, FindAndReplaceDialog)
+selectCodeEditor("mapto7bitacsii_tb.v", 291, 381); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 38, 373); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 38, 373, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectComboBox("FindAndReplaceDialog.cr_Find what:", "keycode", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cr_Replace with:", "keycode", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cr_Find what:", "char", 0); // JComboBox (cr, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton (cr, FindAndReplaceDialog)
+selectCodeEditor("mapto7bitacsii_tb.v", 185, 304); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mapto7bitacsii_tb.v", 57, 357); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 57, 357, false, false, false, false, true); // ch (w, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,278 MB. GUI used memory: 63 MB. Current time: 5/28/20, 12:03:27 PM EEST
+selectCodeEditor("mapto7bitacsii_tb.v", 97, 360); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 93, 362); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 98, 369); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 98, 368); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectComboBox("FindAndReplaceDialog.cr_Find what:", "8'b", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton (cr, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cr_Find what:", "7'b", 1); // JComboBox (cr, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cr_Replace with:", "8'b", -1); // JComboBox (cr, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cr_Find", "Find"); // JButton (cr, FindAndReplaceDialog)
+selectCodeEditor("mapto7bitacsii_tb.v", 227, 206); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 107, 177); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 107, 177, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii.v", 102, 169); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 109, 174); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 114, 208); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 114, 208, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 137, 204); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 135, 203, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 114, 425); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 100, 414); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 100, 414, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii.v", 99, 414); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 99, 414); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 99, 414, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 86, 418); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 75, 411); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 161, 247); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 171, 251); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 100, 249); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 43, 192); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 44, 191, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 69, 425); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 69, 425, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 213, 402); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 87, 443); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 4); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 96, 286); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 100, 337); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 127, 339); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "caeserEncoder_tb.v", 3); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 115, 441); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 3); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 169, 382); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 87, 202); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 3); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 166, 443); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 117, 442); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 121, 449); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 113, 448); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 3); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 176, 492); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 143, 474); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 171, 487); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,297 MB (+90kb) [00:09:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 63 MB. Current time: 5/28/20, 12:06:06 PM EEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'fsm_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj fsm_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "fsm_tb_behav -key {Behavioral:sim_1:Functional:fsm_tb} -tclbatch {fsm_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 1,389 MB (+28660kb) [00:09:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  1484 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [GUI Memory]: 128 MB (+1652kb) [00:09:32]
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source fsm_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,393 MB. GUI used memory: 77 MB. Current time: 5/28/20, 12:06:19 PM EEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 50 ns : File "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/fsm_tb.v" Line 99 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'fsm_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 7066.125 ; gain = 124.816 ; free physical = 711 ; free virtual = 5873 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aL (aI, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mapto7bitacsii_tb (mapto7bitacsii_tb.v)]", 19, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mapto7bitacsii_tb (mapto7bitacsii_tb.v)]", 19, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top mapto7bitacsii_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mapto7bitacsii_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj mapto7bitacsii_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mapto7bitacsii_tb INFO: [VRFC 10-2458] undeclared symbol ascii7b, assumed default net type wire [/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v:32] 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot mapto7bitacsii_tb_behav 
+// Tcl Message:  ****** Webtalk v2019.2 (64-bit)   **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source /home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim/xsim.dir/mapto7bitacsii_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 402.605 ; gain = 0.000 ; free physical = 556 ; free virtual = 5776 INFO: [Common 17-206] Exiting Webtalk at Thu May 28 12:06:54 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 7066.125 ; gain = 0.000 ; free physical = 613 ; free virtual = 5833 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mapto7bitacsii_tb_behav -key {Behavioral:sim_1:Functional:mapto7bitacsii_tb} -tclbatch {mapto7bitacsii_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 1,497 MB (+40509kb) [00:10:08]
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,501 MB. GUI used memory: 77 MB. Current time: 5/28/20, 12:06:57 PM EEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,523 MB. GUI used memory: 82 MB. Current time: 5/28/20, 12:06:57 PM EEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source mapto7bitacsii_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 70 ns : File "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" Line 63 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mapto7bitacsii_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 7145.922 ; gain = 79.797 ; free physical = 561 ; free virtual = 5791 
+// 'd' command handler elapsed time: 20 seconds
+// Elapsed time: 21 seconds
+dismissDialog("Run Simulation"); // e (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [GUI Memory]: 135 MB (+655kb) [00:11:07]
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 4); // i (h, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 2); // i (h, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 142, 263); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 142, 263, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("mapto7bitacsii_tb.v", 144, 176); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 145, 176, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'c'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 152, 260); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii_tb.v", 153, 260, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "mapto7bitacsii_tb.v", 'v'); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bB (cr):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 7145.922 ; gain = 0.000 ; free physical = 689 ; free virtual = 5905 
+// e (cr):  Run Simulation : addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Close"); // bB (cr)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mapto7bitacsii_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj mapto7bitacsii_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mapto7bitacsii INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mapto7bitacsii_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mapto7bitacsii_tb_behav -key {Behavioral:sim_1:Functional:mapto7bitacsii_tb} -tclbatch {mapto7bitacsii_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source mapto7bitacsii_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,541 MB. GUI used memory: 90 MB. Current time: 5/28/20, 12:08:34 PM EEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 70 ns : File "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" Line 63 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mapto7bitacsii_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7151.629 ; gain = 5.707 ; free physical = 658 ; free virtual = 5885 
+// 'd' command handler elapsed time: 17 seconds
+dismissDialog("Run Simulation"); // e (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 4); // i (h, cr)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E (f, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 1); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 294, 512); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 31, 547); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 94, 152); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 25, 591); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 64, 201); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 4); // i (h, cr)
+// [GUI Memory]: 145 MB (+3313kb) [00:12:34]
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fsm_tb.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii_tb.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mapto7bitacsii.v", 1); // i (h, cr)
+selectCodeEditor("mapto7bitacsii.v", 275, 523); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'c'); // ch (w, cr)
+selectCodeEditor("mapto7bitacsii.v", 47, 559); // ch (w, cr)
+typeControlKey((HResource) null, "mapto7bitacsii.v", 'v'); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bB (cr):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cr):  Run Simulation : addNotify
+dismissDialog("Close"); // bB (cr)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'mapto7bitacsii_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvlog --incr --relax -prj mapto7bitacsii_tb_vlog.prj INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sources_1/imports/sources_1/new/mapto7bitacsii.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mapto7bitacsii INFO: [VRFC 10-2263] Analyzing Verilog file "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mapto7bitacsii_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "mapto7bitacsii_tb_behav -key {Behavioral:sim_1:Functional:mapto7bitacsii_tb} -tclbatch {mapto7bitacsii_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,566 MB. GUI used memory: 152 MB. Current time: 5/28/20, 12:10:12 PM EEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source mapto7bitacsii_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 70 ns : File "/home/malak/sites/addproject/caeser_cipher_with_paths/caeser_cipher_with_paths.srcs/sim_1/new/mapto7bitacsii_tb.v" Line 63 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'mapto7bitacsii_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7173.637 ; gain = 22.008 ; free physical = 654 ; free virtual = 5875 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
